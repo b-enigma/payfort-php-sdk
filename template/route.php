@@ -8,7 +8,7 @@ if(!isset($_REQUEST['r'])) {
     echo 'Page Not Found!';
     exit;
 }
-require_once 'PayfortIntegration.php';
+require_once '../PayfortIntegration.php';
 $objFort = new PayfortIntegration();
 if($_REQUEST['r'] == 'getPaymentPage') {
     $objFort->processRequest(htmlspecialchars($_REQUEST['paymentMethod'], ENT_QUOTES, 'UTF-8'));

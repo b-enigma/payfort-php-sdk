@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 <?php
-require_once 'PayfortIntegration.php';
+require_once '../PayfortIntegration.php';
 $objFort = new PayfortIntegration();
 $amount =  $objFort->amount;
 $currency = $objFort->currency;
